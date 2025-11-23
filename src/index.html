@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тетрис на HTML5 + JS + Tailwind</title>
+    <!-- Подключение Tailwind CSS -->
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        /* Скрытие скроллбара */
+        body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white flex items-center justify-center h-screen">
+    <div class="text-center">
+        <h1 class="text-3xl font-bold mb-4">Тетрис</h1>
+
+        <!-- Canvas для отрисовки игры -->
+        <canvas id="tetris" width="300" height="600" class="border-2 border-gray-700 bg-black mx-auto"></canvas>
+
+        <div class="mt-4">
+            <p>Очки: <span id="score" class="font-bold">0</span></p>
+            <p>Уровень: <span id="level" class="font-bold">1</span></p>
+            <p>Линии: <span id="lines" class="font-bold">0</span></p>
+        </div>
+
+        <div class="mt-4">
+            <button id="start-btn" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded">Старт</button>
+            <button id="pause-btn"
+                class="bg-yellow-600 hover:bg-yellow-700 text-white py-2 px-4 rounded ml-2">Пауза</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
