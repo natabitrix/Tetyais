@@ -253,6 +253,9 @@
     }
   }
 }
+body {
+  overflow: hidden;
+}
 @property --tw-border-style {
   syntax: "*";
   inherits: false;

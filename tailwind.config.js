@@ -1,7 +1,10 @@
 module.exports = {
-  content: ["./index.html", "./script.js"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+    content: [
+        "./index.html",
+        "./js/**/*.js"  // рекурсивно ищет все .js в папке js/
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
 }
